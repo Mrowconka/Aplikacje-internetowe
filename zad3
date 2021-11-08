@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const paliwo = promt('podaj cene paliwa: ');
+        const trasa = promt('podaj dlugosc trasy ');
+        const auto = promt('podaj ile paliwa spali twoj samochod na 100km ');
+        const spalanie = (auto * paliwo) / trasa;
+    </script>
+</body>
+</html>
