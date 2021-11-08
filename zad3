@@ -10,7 +10,9 @@
         const paliwo = promt('podaj cene paliwa: ');
         const trasa = promt('podaj dlugosc trasy ');
         const auto = promt('podaj ile paliwa spali twoj samochod na 100km ');
-        const spalanie = (auto * paliwo) / trasa;
+        const spalanie = ((trasa* auto) / 100) * cena;
+
+        document.write('kosztowac to bedzie: ' + spalanie);
     </script>
 </body>
 </html>
