@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <title> Document </title>
+    </head>
+    <body>
+        <script>
+        const liczba1 = parseInt(prompt("Podaj pierwszą liczbę: "));
+        const liczba2 = parseInt(prompt("Podaj drugą liczbę: "));
+        const liczba3 = parseInt(prompt("Podaj trzecią liczbę : "));
+
+        if (liczba3<liczba1 && liczba1<liczba2)
+        {
+            document.write(liczba3 + ", " + liczba1 + ", " + liczba2);
+        }
+
+        else if (liczba1<liczba3 && liczba3<liczba2)
+        {
+            document.write(liczba1 + ", " + liczba3 + ", " + liczba2);
+        }
+
+        
+        else if (liczba1<liczba2 && liczba2<liczba3)
+        {
+            document.write(liczba1 + ", " + liczba2 + ", " + liczba3);
+        }
+
+        else if (liczba2<liczba3 && liczba3<liczba1)
+        {
+            document.write(liczba2 + ", " + liczba3 + ", " + liczba1);
+        }
+
+        else if (liczba2<liczba1 && liczba1<liczba3)
+        {
+            document.write(liczba2 + ", " + liczba1 + ", " + liczba3);
+        }
+
+        else if (liczba3<liczba2 && liczba2<liczba1)
+        {
+            document.write(liczba3 + ", " + liczba2 + ", " + liczba1);
+        }
+        
+        </script>
+    </body>
+</html>
