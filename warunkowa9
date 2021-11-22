@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset = "UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE-edge"/>
+        <meta name="viewport" content="width-device-width, initial-scale=1.0" />
+        <title> Document </title>
+    </head>
+    <body>
+        <script>
+        const liczba1 = parseInt(prompt("Podaj liczbe pierwsza: "));
+        const liczba2 = parseInt(prompt("Podaj liczbe druga: "));
+        const liczba3 = parseInt(prompt("Podaj liczbe trzecia: "));
+        var dzialanie;
+
+        dzialanie = liczba2*liczba2-4*liczba1*liczba3
+   
+        if (liczba1%liczba2==0)
+        {
+            document.write("Wynik to: " + dzialanie);
+        }
+
+        </script>
+    </body>
+</html>
