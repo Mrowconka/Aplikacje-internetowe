@@ -1,0 +1,46 @@
+<html>
+<head>
+<title>Document</title>
+<meta charset="utf-8" />
+<form action="" method="POST">
+    <input type="number" name="liczba1" placeholder="wpisz pierwszą liczbę"/>
+    <input type="number" name="liczba2" placeholder="wpisz drugą liczbę"/>
+    <input type="submit" value="Oblicz" />
+    </form>
+    <div class="wynik"></div>
+<script>
+function Liczby(operator) 
+{
+    const a = document.querySelector('form');
+            
+        const b = document.querySelector('div.wynik');
+        formularz.addEventListener('submit', (e) => {
+    switch(operator) 
+    {
+        case '+':
+            var submit = parseFloat(a) + parseFloat(b);         
+        break;
+        case '-':
+            var submit = parseFloat(a) - parseFloat(b);         
+        break;  
+        case 'x':
+            var submit = parseFloat(a) * parseFloat(b);         
+        break;  
+        case '%':
+            var submit = parseFloat(a) % parseFloat(b);         
+        break;    
+    }
+ 
+    document.getElementById('result').value = '= ' + submit;
+}
+</script>
+</head>
+<body>
+<form id="Liczby">
+    <button type="button" onclick="Liczby(this.innerHTML)">+</button> 
+    <button type="button" onclick="Liczby(this.innerHTML)">-</button>
+    <button type="button" onclick="Liczby(this.innerHTML)">x</button>   
+    <button type="button" onclick="Liczby(this.innerHTML)">%</button>
+</form>
+</body>
+</html>
