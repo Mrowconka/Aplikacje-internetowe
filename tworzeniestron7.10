@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styl.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="kontener">
+        <div id="naglowek">
+            <p>.</p>
+        </div>
+        <div id="jeden">
+            <p>.</p>
+        </div>
+        <div id="menu">
+            <ol>
+                <li><a href="#">Strona główna</a></li>
+                <li><a href="#">Serwis</a>
+                    <br>
+                    <ul>
+                        <li><a href="#">Komputerów</a></li>
+                        <li><a href="#">Laptopów</a></li>
+                        <li><a href="#">Telefonów</a></li>
+                        <li><a href="#">Tabletów</a></li>
+                        <li><a href="#">Smartfonow</a></li>
+                     </ul>
+                </li>
+                <li><a href="#">Systemy</a>
+                    <br>
+                    <ul>
+                        <li><a href="#">Linux</a></li>
+                        <li><a href="#">Windows</a></li>
+                        <li><a href="#">IoS</a></li>
+                        <li><a href="#">Android</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Cennik</a>
+                    <br>
+                    <ul>
+                        <li><a href="#">Komputerów</a></li>
+                        <li><a href="#">Tabletów</a></li>
+                        <li><a href="#">Smartfonów</a></li>
+                        <li><a href="#">Laptopów</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">O firmie</a>
+                    <br>
+                    <ul>
+                        <li><a href="#">Zarzad</a></li>
+                        <li><a href="#">Udziałowcy</a></li>
+                        <li><a href="#">Dla prasy</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">Kontakt</a>
+                    <br>
+                    <ul>
+                        <li><a href="#">Dojazd:</a></li>
+                        <li><a href="#">Formularz:</a></li>
+                        <li><a href="#">Dane teleadresowe:</a></li>
+                    </ul>
+                </li>
+                </ol>
+            </ol>
+        </div>
+        <div id="2elemnty">
+            <div id="lewo"></div>
+        </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+
+#naglowek{
+    border: 1px solid black;
+    height: 50px;
+    background-color: blanchedalmond;
+}
+#jeden{
+    border: 1px solid black;
+    margin-top: 10px;
+    height:  100px;
+    background-color: bisque;
+}
+#menu{
+    border: 1px solid black;
+    text-align: center;
+    margin-top: 10px;
+    background-color: pink;
+    height: 180px;
+}
+ol{
+    font-size: 19px;
+    list-style-type: none;
+    display: inline-block;
+}
+ol a{
+    color:rgb(107, 106, 106);
+    text-decoration: none;
+    display: block;
+}
+ol > li{
+    border-left: 1px solid black;
+    float: left;
+    height: 40px;
+    width: 160px;
+}
+ol > li:last-child{
+    border-right: 1px solid black;
+    
+}
+ol > li:hover{
+    background-color: palevioletred;
+}
+ol > li:hover > a{
+    color: purple;
+}
+ol > li >ul{
+    list-style-type: none;
+    height: 40px;
+    display: none;
+}
+ol > li:hover > ul{
+    display: block;
+}
+ol > li > ul > li{
+    background-color: plum;
+    border-top: 1px solid gray;
+    position: relative;
+    z-index: 100;
+}
+ol > li > ul > li:hover{
+    background-color: rgb(182, 37, 85);
+}
