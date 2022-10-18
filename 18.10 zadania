@@ -1,0 +1,85 @@
+<html>
+    <body>
+        <?php
+        echo"ZADANIE 1";
+        echo"<br>";
+        
+
+        $i;
+        $temp=0;
+        $odpowiedz;
+        for($i=0;$i<300;$i++){
+            $temp=$temp+$i;
+            $odpowiedz=$temp/300;
+
+          
+
+        }
+         echo "Suma liczb od 1-300 wynosi: ".$temp;
+         echo"<br>";
+         echo"<br>";
+         echo "Średnia arytmetyczna liczb od 1-300 wynosi: " .$odpowiedz;
+         echo"<br>";
+         echo"<br>";
+         echo"ZADANIE 2";
+      
+        $a=7;
+        $b=0;
+        $c=-5;
+        echo"<br>";
+        if ($a>0){
+        print("Liczba".$a." jest dodatnia");
+        }
+        else if ($a<0){
+        print("Liczba".$a." jest ujemna");
+        }
+        if($a=0){
+            print("liczba".$a." jest równa 0"); 
+        }
+        echo"<br>";
+        if ($b>0){
+            print("Liczba".$b." jest dodatnia");
+            }
+            else if ($b=0){
+            print("liczba".$b." jest równa 0"); 
+            }
+            if($b<0){
+                print("Liczba".$b." jest ujemna");
+            }
+            echo"<br>";
+            if ($c>0){
+                print("Liczba".$c." jest dodatnia");
+                }
+                else if ($c<0){
+                print("Liczba".$c." jest ujemna");
+                }
+                if($c=0){
+                    print("liczba".$c." jest równa 0"); 
+                }
+
+echo"<br>";
+echo"<br>";
+echo"ZADANIE 3";
+$n=10;
+$silnia=1;
+for($i=1;$i<=$n;$i++){
+    $silnia*=$i;
+}
+echo"<br>";
+echo"Silnia wynosi: ";
+print("$n!=$silnia");
+echo"<br>";
+echo"<br>";
+echo"ZADANIE 4";
+echo"<br>";
+echo "Potęga 2 do10 wynosi: ";
+echo 2**10;
+
+       
+
+
+
+        ?>
+
+</body>
+</html>
